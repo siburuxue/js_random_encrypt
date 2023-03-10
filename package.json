@@ -1,0 +1,23 @@
+{
+  "name": "random-encrypt",
+  "version": "1.0.0",
+  "description": "encrypt base openssl",
+  "main": "random-encrypt.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siburuxue/js_random_encrypt.git"
+  },
+  "keywords": [
+    "encrypt",
+    "unrepeat",
+    "openssl",
+    "timestamp"
+  ],
+  "license": "Apache-2.0",
+  "author": "zhangpeng <siburuxue@gmail.com>",
+  "homepage": "https://github.com/siburuxue",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "js-md5": "^0.7.3"
+  }
+}
