@@ -140,7 +140,7 @@ let RandomEncrypt = {
         /**
          * 自定义盐值 加密时不能为空
          * @param salt
-         * @returns {Tools}
+         * @returns this
          */
         this.setSalt = function (salt) {
             this.salt = salt;
@@ -148,7 +148,7 @@ let RandomEncrypt = {
         };
         /**
          * 自定义对齐时区 默认东八区 8
-         * @return {Tools}
+         * @return this
          * @param offset
          */
         this.setTimezoneOffset = function (offset) {
@@ -159,7 +159,7 @@ let RandomEncrypt = {
         /**
          * 自定义加密key有效时间 默认5秒
          * key有效期为 timeInterval + secondRedundancy
-         * @return {Tools}
+         * @return this
          * @param timeInterval
          */
         this.setTimeInterval = function (timeInterval) {
@@ -174,26 +174,26 @@ let RandomEncrypt = {
         /**
          * 自定义跨区间 冗余秒数 默认2秒
          * key有效期为 timeInterval + secondRedundancy
-         * @return {Tools}
+         * @return this
          * @param secondRedundancy
          */
         this.setSecondRedundancy = function (secondRedundancy) {
             this.secondRedundancy = secondRedundancy;
             return this;
         };
-        this.isset = function(key){
+        this.isSet = function(key){
             return typeof (config[key]) !== 'undefined';
         }
-        if (this.isset("salt")) {
+        if (this.isSet("salt")) {
             this.setSalt(config['salt']);
         }
-        if (this.isset("offset")) {
+        if (this.isSet("offset")) {
             this.setTimezoneOffset(parseInt(config['offset']));
         }
-        if (this.isset("timeInterval")) {
+        if (this.isSet("timeInterval")) {
             this.setTimeInterval(parseInt(config['timeInterval']));
         }
-        if (this.isset("undefined")) {
+        if (this.isSet("undefined")) {
             this.setSecondRedundancy(parseInt(config['secondRedundancy']));
         }
     },

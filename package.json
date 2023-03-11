@@ -5,7 +5,7 @@
   "main": "random-encrypt.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/siburuxue/js_random_encrypt.git"
+    "url": "git+https://github.com/siburuxue/js_random_encrypt.git"
   },
   "keywords": [
     "encrypt",
@@ -19,5 +19,12 @@
   "dependencies": {
     "crypto-js": "^4.1.1",
     "js-md5": "^0.7.3"
+  },
+  "bugs": {
+    "url": "https://github.com/siburuxue/js_random_encrypt/issues"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
