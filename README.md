@@ -1,4 +1,4 @@
-# random_encrypt
+# random-encrypt
 
 ## 基于openssl加密
 ### 仅使用了 AES-128-CBC
@@ -7,11 +7,6 @@
 #### 默认时区为东八区，加密端和解密端通过统一时区对齐时间，避免不同时区，同时间段，加密后的密文不同，导致无法解密
 #### 在使用时，必须自定义盐值，不能为空。`if (this.salt === "") throw new Error("the salt can not be empty.");`
 #### Encrypt函数返回 (加密后字符串,key,iv,加密时使用的时间戳) 供解密失败后备查。
-
-## Install
-```shell
-npm install random_encrypt
-```
 
 示例代码：
 ```javascript

@@ -1,6 +1,6 @@
 {
   "name": "random-encrypt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "encrypt base openssl",
   "main": "random-encrypt.js",
   "repository": {
